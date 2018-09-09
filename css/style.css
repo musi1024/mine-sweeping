@@ -1,0 +1,187 @@
+.main {
+    margin: 10px auto;
+    padding: 20px;
+    background: #EEE;
+    width: 600px;
+    zoom: 1;
+}
+.main .landmine {
+    display: none;
+    background-color: #CCC;
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+
+.landmine-none {
+    position: fixed;
+    display: none;
+    float: left;
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+}
+
+.main .landmine .land {
+    float: left;
+    border: 2px outset #EEE;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main .landmine .land:hover {
+    background-color: #AAA;
+}
+.main .operation {
+    width: 180px;
+    float: right;
+    text-align: center;
+}
+
+.show {
+    background-image: url(../img/lei.jpg);
+    background-size: 36px 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.num {
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.flag {
+    background-image: url(../img/flag.jpg);
+    background-size: 36px 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrong {
+    background-image: url(../img/wrong.jpg);
+    background-size: 36px 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.alertBOX {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.modal-mask {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+}
+
+.modal-alert {
+    margin: 0 auto;
+    padding: 0;
+    color: #444;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #E3E9EB;
+    box-shadow: 0 0 10px #777;
+    width: 250px;
+    height: 200px;
+    opacity: 1;
+}
+
+.modal-title {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24px;
+    background: lightblue;
+    margin: 5px;
+    margin-bottom: 0;
+    border: 1px solid #AAA4A4;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-message {
+    padding: 30px 5px;
+    background: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+    margin-top: 0;
+    border: 1px solid #AAA4A4;
+    background-color: #F8F4F4;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.vertical-center {
+    top: 50%;
+    position: relative;
+    transform: translateY(-100%);
+}
+
+.main:after {
+    clear: both;
+    display: block;
+    content: "";
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+}
+.main .tip {
+    font-size: 14px;
+    margin: 5px;
+}
+
+.main .tip ul {
+
+}
+
+.main .tip ul li {
+    margin: 5px 0;
+    line-height: 20px;
+}
+.main .light{
+    font-size: 30px;
+}
+.main .red {
+    color: red;
+}
+.main .f60 {
+    color: #F60;
+}
+.main input[type=button] {
+    padding: 2px 10px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.main .txtleft {
+    text-align: left;
+}
+
+.main input[type='radio'],
+.main fieldset label {
+    cursor: pointer;
+}
+
+.main fieldset {
+    margin: 10px 0;
+    line-height: 25px;
+}
